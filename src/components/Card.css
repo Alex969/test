@@ -1,0 +1,51 @@
+.card {
+  height: 250px;
+  width: 100%;
+  background-color: white;
+  margin: 0 16px;
+  border-radius: 8px;
+  box-shadow: 0 0.5rem 0.75rem rgba(0,0,0,0.16);
+  text-align: left;
+}
+
+.header {
+  color: #253648;
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 24px;
+  padding-top: 25%;
+}
+
+.body {
+  color: grey;
+  font-size: 14px;
+  font-weight: normal;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.impact {
+  height: fit-content;
+  width: fit-content;
+  position: relative;
+  left: 100px;
+  top: -137px;
+  background-color: #EEEFF1;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #253648;
+}
+
+.track {
+  height: fit-content;
+  width: fit-content;
+  position: relative;
+  left: 24px;
+  top: -168px;
+  background-color: #FDEFE2;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #764C25;
+}
