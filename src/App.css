@@ -8,8 +8,3 @@ body{
   color: #253648;
   padding-left: 75px;
 }
-
-@media (orientation: portrait) and (min-width: 375px) {
-  .title{
-  }
-}

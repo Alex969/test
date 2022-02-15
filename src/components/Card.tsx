@@ -14,7 +14,9 @@ const Card = (props: CardProps) => {
       <h1 className='header'>{props.header}</h1>
       <h2 className='body'>{props.body}</h2>
       <h3 className='impact'>{props.impact}</h3>
-      <h4 className='track'>{props.track}</h4>
+      { props.track === "ON TRACK" ? 
+        <h4 className='onTrack'>{props.track}</h4> :
+        <h4 className='offTrack'>{props.track}</h4> }
     </div>
   )
 }

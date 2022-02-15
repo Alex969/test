@@ -4,7 +4,4 @@ import { setupServer } from 'msw/node';
 import { useFetch } from "../hooks/useFetch";
 
 const server = setupServer(
-  rest.get("/api", (req, res, ctx => {
-    return rest(ctx.json({}))   
-  }))
 )

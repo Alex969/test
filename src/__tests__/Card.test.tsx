@@ -1,8 +1,8 @@
 import React from 'react';
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import Card from '../components/Card';
 
-describe("<Card />", () => {
-  test('should display a white box on the page', async () => {
-  });
-});
+test('card has a header', () => {
+  const cardHeader = <Card header='Hello' body='' track='' impact='' />;
+  expect(cardHeader).toBeInTheDocument;
+})

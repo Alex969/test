@@ -60,7 +60,7 @@ function App() {
   return (
     <>
       <div className='App'>
-      <h1 className="title">Insights</h1>
+        <h1 className="title">Insights</h1>
         <Carousel 
         breakPoints={breakPoints}
         isRTL={false}>

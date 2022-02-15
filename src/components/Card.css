@@ -1,149 +1,175 @@
 .card {
+  position: relative;
   background-color: white;
-  margin: 0 16px;
   border-radius: 8px;
   box-shadow: 0 0.5rem 0.75rem rgba(0,0,0,0.16);
   text-align: left;
 }
 
 .header {
+  position: absolute;
   color: #253648;
   font-weight: bold;
-  padding-left: 24px;
-  padding-top: 25%;
 }
 
 .body {
   color: grey;
   font-weight: normal;
-  padding-left: 24px;
-  padding-right: 24px;
 }
 
 .impact {
+  position: absolute;
   background-color: #EEEFF1;
   border-radius: 4px;
-  font-weight: bold;
+  font-weight: normal;
+  text-align: center;
   color: #253648;
 }
 
-.track {
+.onTrack {
+  position: absolute;
+  top: 0px;
+  background-color: #DDF9EA;
+  border-radius: 4px;
+  font-weight: normal;
+  color: #15693B;
+}
+
+.offTrack {
+  position: absolute;
+  top: 0px;
   background-color: #FDEFE2;
   border-radius: 4px;
-  font-weight: bold;
+  font-weight: normal;
   color: #764C25;
 }
 
 @media all and (orientation: portrait) and (min-width: 375px), (max-width: 767px){
-  body {
-    background-color: black;
-  }
+  
   .card {
-    background-color: white;
     margin: 0 8px;
-    box-shadow: 0 0.5rem 0.75rem rgba(0,0,0,0.16);
-    text-align: left;
   }
   .header {
+    top: 64px;
+    left: 16px;
     font-size: 20px;
   }
   
   .body {
+    padding-top: 104px;
+    padding-left: 16px;
+    padding-bottom: 89px;
     font-size: 20px;
   }
   
   .impact {
+    bottom: 0px;
+    left: 16px;
+    right: 16px;
     font-size: 20px;
   }
   
-  .track {
+  .onTrack {
     font-size: 20px;
-    border-spacing: 24px;
+    left: 16px;
+  }
+
+  .offTrack {
+    font-size: 20px;
+    left: 16px;
   }
 }
 
 @media (orientation: landscape) and (min-width: 768px) {
-  body {
-    background-color: blue;
-  }
+
   .card {
-    background-color: white;
     margin: 0 16px;
-    border-radius: 8px;
-    box-shadow: 0 0.5rem 0.75rem rgba(0,0,0,0.16);
-    text-align: left;
   }
   .header {
+    top: 54px;
+    left: 24px;
     font-size: 16px;
   }
   
   .body {
+    padding-top: 74px;
+    padding-left: 24px;
+    padding-bottom: 89px;
     font-size: 16px;
   }
   
   .impact {
+    bottom: 16px;
+    left: 24px;
+    right: 24px;
+    font-size: 20px;
     font-size: 16px;
   }
   
-  .track {
+  .onTrack {
     font-size: 16px;
-    grid-template-columns: 1fr 1fr;
+    left: 24px;
+  }
+  .offTrack {
+    font-size: 16px;
+    left: 24px;
   }
 }
 
 @media (orientation: landscape) and (min-width: 1024px) {
-  body {
-    background-color: pink;
-  }
-  .card {
 
-    background-color: white;
+  .card {
     margin: 0 16px;
-    border-radius: 8px;
-    box-shadow: 0 0.5rem 0.75rem rgba(0,0,0,0.16);
-    text-align: left;
   }
+
   .header {
-    font-size: 14px;
+    font-size: 16px;
   }
   
   .body {
-    font-size: 14px;
+    font-size: 16px;
   }
   
   .impact {
+    top: 4px;
+    left: 116px;
+    width: fit-content;
+    height: fit-content;
     font-size: 14px;
   }
   
-  .track {
+  .onTrack {
+    font-size: 14px;
+  }
+
+  .offTrack {
     font-size: 14px;
   }
 }
 
 @media (orientation: landscape) and (min-width: 1280px) {
-  body {
-    background-color: yellow;
-  }
+
   .card {
-    background-color: white;
     margin: 0 16px;
-    border-radius: 8px;
-    box-shadow: 0 0.5rem 0.75rem rgba(0,0,0,0.16);
-    text-align: left;
   }
   .header {
-    font-size: 12px;
+    font-size: 20px;
   }
   
   .body {
-    font-size: 12px;
+    padding-top: 90px;
+    font-size: 20px;
   }
   
   .impact {
-    font-size: 12px;
+    font-size: 16px;
   }
   
-  .track {
-    font-size: 12px;
+  .onTrack {
+    font-size: 16px;
+  }
+
+  .offTrack {
+    font-size: 16px;
   }
 }
