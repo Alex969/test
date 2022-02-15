@@ -6,6 +6,10 @@ body{
   font-size: 20px;
   font-weight: bold;
   color: #253648;
-  padding-bottom: 16px;
   padding-left: 75px;
+}
+
+@media (orientation: portrait) and (min-width: 375px) {
+  .title{
+  }
 }

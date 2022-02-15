@@ -4,7 +4,7 @@ interface CardProps {
   header: string;
   body: string;
   impact: string;
-  track: string;
+  track: string | undefined;
 }
 
 const Card = (props: CardProps) => {

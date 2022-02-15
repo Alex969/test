@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 
 export const useFetch = (uri: string) => {
-  const [data, setData] = useState<null | Response>(null);
+  const [customerData, setCustomerData] = useState<null>(null);
   const [error, setError] = useState<Error | null>();
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     if (!uri) return;
@@ -11,7 +12,10 @@ export const useFetch = (uri: string) => {
       const res = await fetch(uri);
       const json = await res.json();
 
-      setData(json);
+      if (json) {
+        setCustomerData(json);
+        setLoading(false);
+      }
     } catch (error: any) {
       setError(error);
     }
@@ -20,5 +24,5 @@ export const useFetch = (uri: string) => {
     fetchData();
   }, [uri]);
 
-  return{ data, error };
+  return{ loading, customerData, error };
 }
